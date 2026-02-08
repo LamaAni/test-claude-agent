@@ -1,0 +1,357 @@
+# Weather API Configuration
+# This file documents weather data sources and how to interpret weather information
+# Note: This is a documentation file only - actual API keys should never be stored in config files
+
+## Purpose
+Define how the Packing Advisor agent should access and interpret weather data for travel planning.
+
+## Preferred Weather Data Sources
+
+### Primary Sources (Most Reliable)
+
+1. **AccuWeather**
+   - Coverage: Global
+   - Forecast range: 15 days
+   - Historical data: Yes, extensive
+   - Best for: Long-range planning, detailed forecasts
+   - API: Available (requires key)
+   - Website: accuweather.com
+   - Data includes: Temperature, precipitation, humidity, UV index, wind
+   
+2. **Weather.com (The Weather Channel)**
+   - Coverage: Global
+   - Forecast range: 15 days
+   - Historical data: Yes
+   - Best for: US and major international cities
+   - API: IBM Weather Company Data
+   - Website: weather.com
+   - Data includes: Comprehensive weather data
+
+3. **OpenWeatherMap**
+   - Coverage: Global
+   - Forecast range: 16 days
+   - Historical data: Yes (paid)
+   - Best for: Developer-friendly, good coverage
+   - API: Yes, free tier available
+   - Website: openweathermap.org
+   - Data includes: Temperature, precipitation, wind, humidity
+
+4. **WeatherAPI.com**
+   - Coverage: Global
+   - Forecast range: 14 days
+   - Historical data: Yes
+   - Best for: Easy integration
+   - API: Yes, free tier available
+   - Website: weatherapi.com
+   - Data includes: Current, forecast, historical
+
+### Secondary Sources (Regional Specialists)
+
+5. **National Weather Services**
+   - US: NOAA / National Weather Service (weather.gov)
+   - UK: Met Office (metoffice.gov.uk)
+   - Australia: Bureau of Meteorology (bom.gov.au)
+   - Canada: Environment Canada (weather.gc.ca)
+   - Best for: Official government forecasts, very reliable
+   - Free: Yes
+   - Coverage: Regional only
+
+6. **Timeanddate.com**
+   - Coverage: Global
+   - Best for: Historical climate data, sunrise/sunset times
+   - Free: Yes (website)
+   - Data includes: Climate averages, historical weather
+
+### For Climate and Seasonal Data
+
+7. **Weatherbase.com**
+   - Best for: Historical climate averages
+   - Coverage: Global, thousands of cities
+   - Data: Monthly averages (temperature, precipitation, humidity)
+   - Use when: Planning far-future trips (6+ months out)
+
+8. **Wikipedia Climate Data**
+   - Available for: Most major cities
+   - Data: Climate tables with monthly averages
+   - Reliable: Yes, sourced from national weather services
+   - Use when: Need quick climate overview
+
+## Fallback Sources
+
+### When Primary Sources Unavailable
+
+1. **Google Search "weather [destination]"**
+   - Shows: Google Weather widget
+   - Forecast: ~10-14 days
+   - Simple: Yes, no API needed
+   - Reliable: Yes, aggregates multiple sources
+
+2. **Climate-Data.org**
+   - Historical climate data
+   - Good coverage globally
+   - Free access
+
+## Data Interpretation Guidelines
+
+### Temperature Data
+
+**What to gather:**
+- Daily high and low temperatures
+- "Feels like" / apparent temperature (accounts for humidity/wind)
+- Temperature trends (warming or cooling during trip)
+
+**How to interpret:**
+```yaml
+temperature_interpretation:
+  extreme_cold: "Below 0°C (32°F)"
+  cold: "0-10°C (32-50°F)"
+  cool: "10-15°C (50-59°F)"
+  mild: "15-20°C (59-68°F)"
+  warm: "20-25°C (68-77°F)"
+  hot: "25-32°C (77-90°F)"
+  extreme_heat: "Above 32°C (90°F)"
+```
+
+**Adjustments for feel:**
+- High humidity: Add 2-5°C to perceived temperature
+- High wind: Subtract 2-5°C from perceived temperature (wind chill)
+- High altitude: Stronger sun despite cool air
+
+### Precipitation Data
+
+**What to gather:**
+- Chance of precipitation (%)
+- Expected amount (mm or inches)
+- Type (rain, snow, mixed)
+- Pattern (scattered showers vs. all-day rain)
+
+**How to interpret:**
+```yaml
+precipitation_interpretation:
+  light_occasional:
+    chance: 10-30%
+    amount_per_day: <5mm
+    action: Light rain gear optional
+  
+  moderate:
+    chance: 30-60%
+    amount_per_day: 5-15mm
+    action: Rain jacket and umbrella recommended
+  
+  heavy_frequent:
+    chance: 60-100%
+    amount_per_day: >15mm
+    action: Full rain gear essential, plan indoor activities
+  
+  monsoon_tropical:
+    chance: 70-100%
+    amount_per_day: >50mm
+    action: Expect to get wet, waterproof everything
+```
+
+### Humidity Data
+
+**What to gather:**
+- Relative humidity percentage
+- Dew point
+
+**How to interpret:**
+```yaml
+humidity_interpretation:
+  low: "<30% - Dry, comfortable, may need moisturizer"
+  moderate: "30-60% - Comfortable range"
+  high: "60-80% - Sticky, affects cooling, more clothing changes"
+  extreme: ">80% - Very uncomfortable, clothing won't dry, fungal risk"
+```
+
+**Impact on packing:**
+- High humidity: Quick-dry fabrics, fewer cotton items, more tops
+- Low humidity: Any fabrics work, extra moisturizer, lip balm
+
+### UV Index
+
+**What to gather:**
+- UV index forecast (0-11+ scale)
+- Hours of daylight
+
+**How to interpret:**
+```yaml
+uv_interpretation:
+  low: "0-2 - Minimal protection needed"
+  moderate: "3-5 - Sunscreen recommended for extended outdoor time"
+  high: "6-7 - Sun protection important (sunscreen, hat, sunglasses)"
+  very_high: "8-10 - Extra precautions needed, seek shade midday"
+  extreme: "11+ - Maximum protection critical, avoid midday sun"
+```
+
+### Wind Data
+
+**What to gather:**
+- Wind speed (km/h or mph)
+- Wind chill (if cold weather)
+
+**How to interpret:**
+```yaml
+wind_interpretation:
+  calm: "0-10 km/h (0-6 mph) - No impact"
+  breezy: "10-30 km/h (6-19 mph) - Layers may blow, secure hat"
+  windy: "30-50 km/h (19-31 mph) - Wind-resistant jacket needed"
+  very_windy: ">50 km/h (>31 mph) - Activities may be affected"
+```
+
+## Data Lookup Parameters
+
+### For Upcoming Trips (0-14 days away)
+
+**Use:** Current weather forecasts
+
+**Lookup:**
+1. Exact dates if within forecast range (typically 14 days)
+2. Daily highs and lows
+3. Precipitation chance and amount
+4. Humidity levels
+5. UV index
+6. Wind conditions
+
+**Confidence:** High for 1-7 days, moderate for 8-14 days
+
+### For Future Trips (15+ days away)
+
+**Use:** Historical climate data and seasonal averages
+
+**Lookup:**
+1. Monthly average temperatures for travel month
+2. Historical precipitation patterns
+3. Typical humidity for season
+4. Expected UV levels for latitude/season
+5. Seasonal weather patterns (monsoon, typhoon, etc.)
+
+**Confidence:** Moderate - based on historical patterns
+
+**Note to user:**
+"Specific forecasts aren't available this far in advance. Recommendations are based on typical [month] weather in [destination]. Check forecasts 1-2 weeks before your trip for updates."
+
+## Seasonal Considerations
+
+### Monsoon / Rainy Seasons
+**Lookup:** Typical monsoon months for destination
+**Sources:** Regional tourism sites, Wikipedia climate tables
+
+**Example patterns:**
+- Southeast Asia: May-October (varies by country)
+- India: June-September
+- West Africa: June-September
+- Caribbean: June-November (hurricane season)
+
+### Hurricane / Typhoon Season
+**Lookup:** Storm season dates and historical frequency
+**Sources:** NOAA, regional meteorological services
+
+**Critical destinations:**
+- Caribbean: June-November
+- Pacific typhoons: May-November
+- Indian Ocean cyclones: April-May, October-November
+
+### Winter / Summer Extremes
+**Consider:**
+- High altitude destinations (colder than lowlands)
+- Desert destinations (extreme heat, cold nights)
+- Polar regions (limited daylight in winter)
+
+## API Key Management (Documentation Only)
+
+**IMPORTANT:** API keys should NEVER be stored in configuration files or code.
+
+**Best practices for API key usage:**
+1. Store in environment variables
+2. Use secret management systems
+3. Rotate keys regularly
+4. Never commit to version control
+5. Use different keys for dev/prod
+
+**For AI Agent:**
+Since AI agents typically don't have direct API access, the recommendation is:
+1. Describe what data would be looked up
+2. User or integration system performs actual API call
+3. Or use public websites that don't require authentication
+4. State clearly: "I would look up [data] from [source]"
+
+## Example Weather Lookup
+
+```markdown
+For a trip to Bali from July 15-25, 2026:
+
+WEATHER RESEARCH PROCESS:
+1. Check OpenWeatherMap or AccuWeather for forecast (if within 14 days)
+2. If beyond forecast range, lookup historical July data from Weatherbase
+3. Confirm seasonal patterns (July is dry season in Bali)
+
+EXPECTED DATA TO GATHER:
+- Temperature: 28-32°C daily (82-90°F)
+- Humidity: 65-75% (high)
+- Precipitation: <5mm per day, 10-20% chance (dry season)
+- UV Index: 9-10 (very high, tropical location)
+- Wind: Moderate, 10-20 km/h
+
+PACKING IMPLICATIONS:
+- Light, breathable clothing for heat and humidity
+- Strong sun protection (SPF 50+, hat, sunglasses)
+- Minimal rain gear (light jacket or umbrella for occasional shower)
+- Quick-dry fabrics preferred
+- Plan for clothing changes (humidity causes sweating)
+```
+
+## Validation Rules
+
+### Cross-Check Weather Data
+1. Verify with at least 2 sources if data seems unusual
+2. Check if destination is in unusual weather event (heatwave, cold snap)
+3. Compare to historical averages (are forecasts typical?)
+4. Note if El Niño / La Niña affecting patterns
+
+### Red Flags for Verification
+- Temperature 10°C+ different from historical average
+- Precipitation drastically different from typical season
+- Extreme weather warnings or advisories
+- Conflicting data between major sources
+
+### When to Recommend Trip Rescheduling
+- Hurricane / typhoon direct path
+- Extreme heat warnings (>40°C / 104°F)
+- Severe cold warnings (<-20°C / -4°F)
+- Flooding or severe storm forecasts
+- Natural disaster warnings
+
+## Integration with Packing Recommendations
+
+### Weather → Packing Translation
+
+**Temperature** → Clothing weight and layering
+**Precipitation** → Rain gear type and amount
+**Humidity** → Fabric choices and quantity
+**UV** → Sun protection items
+**Wind** → Windproof layers
+
+**Example:**
+```
+Weather: Hot (30°C), High humidity (75%), High UV (9)
+→ Packing: Light cotton/linen, quick-dry, SPF 50, hat, sunglasses, extra tops
+```
+
+## Summary
+
+**For the Agent:**
+1. **Always research weather** for destination and dates
+2. **Use forecasts** for near-term trips (within 14 days)
+3. **Use climate data** for far-future trips (beyond 14 days)
+4. **Interpret data** according to guidelines above
+5. **Present findings** transparently in recommendations
+6. **Cross-check** unusual data
+7. **Note uncertainty** when using historical data vs. forecasts
+
+**Remember:**
+- Weather forecasts are predictions, not guarantees
+- Climate data shows historical patterns, not specific conditions
+- Always recommend checking forecasts again 1-2 weeks before travel
+- Extreme weather should prompt advisory to user
+- When in doubt, pack versatile layers
