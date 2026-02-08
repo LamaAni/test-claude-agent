@@ -1,39 +1,21 @@
-# Agent Specification
+# Corrected Agent Framework Specification
+
+## Agent Selection
+The agent will present a selection of available options to the user when prompted. This will allow users to choose the most suitable agent for their tasks.
 
 ## Directory Structure
+The directory structure for skills and rules has been corrected to ensure that they are flat and not contained within subdirectories:
+
 ```
-/project-root/
-├── /agents/
-│   ├── agent1/
-│   ├── agent2/
-│   └── agentN/
-├── /skills/
-│   ├── skill1/
-│   ├── skill2/
-│   └── skillN/
-├── /rules/
-│   ├── rule1/
-│   ├── rule2/
-│   └── ruleN/
-└── /configs/
-    └── config.yaml
+/skills
+/rules
 ```
 
-## Execution Flow
-### Agent Discovery and Selection
-- **Single Agent Mode**: Describe how a single agent is selected based on certain criteria.
-- **Combined Agent Mode**: Describe the logic for selecting multiple agents and how they interoperate.
-
-### Six-Phase Execution Flow
-1. **Initialization**: Explain the setup required before the agent starts execution.
-2. **Rule Validation**: Describe how rules are validated for execution.
-3. **Skill Lookup**: Explain how and where skills are looked up.
-4. **Configuration Loading**: Describe how configurations are loaded and used.
-5. **Scope Determination**: Explain how the agent determines what tasks it should focus on.
-6. **Execution**: Describe how the final execution is carried out.
-
-## Shared vs Agent-Specific Skills and Rules
-- **Shared Skills**: Define skills that can be accessed by all agents.
-- **Agent-Specific Skills**: Define skills that are unique to individual agents.
-- **Shared Rules**: Define rules that apply across all agents.
-- **Agent-Specific Rules**: Define rules that are unique to specific agents.
+## Execution Phases
+The execution phases have been outlined as follows:
+1. **Initialization**: Setting up the environment and loading necessary components.
+2. **Agent Selection**: Presenting options to the user for agent selection.
+3. **Execution**: Performing the tasks as per user's request using the selected agent.
+4. **Feedback**: Gathering feedback from the user about the results.
+5. **Learning**: Incorporating user feedback to improve agent performance in future interactions.
+6. **Termination**: Gracefully shutting down the agent after task completion.
