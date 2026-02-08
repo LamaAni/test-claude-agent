@@ -1,17 +1,39 @@
-# Agent Execution Logic
+# Agent Specification
 
-## Core Execution Logic
-- Define the main execution path that the agent will follow during its operation.
-- Implement error handling and fallback strategies to ensure reliability.
+## Directory Structure
+```
+/project-root/
+├── /agents/
+│   ├── agent1/
+│   ├── agent2/
+│   └── agentN/
+├── /skills/
+│   ├── skill1/
+│   ├── skill2/
+│   └── skillN/
+├── /rules/
+│   ├── rule1/
+│   ├── rule2/
+│   └── ruleN/
+└── /configs/
+    └── config.yaml
+```
 
-## Agent Discovery and Selection Flow
-- **Single Agent Mode**:
-  1. Initialize agent parameters.
-  2. Discover agents available.
-  3. Evaluate and select the best agent based on defined criteria.
+## Execution Flow
+### Agent Discovery and Selection
+- **Single Agent Mode**: Describe how a single agent is selected based on certain criteria.
+- **Combined Agent Mode**: Describe the logic for selecting multiple agents and how they interoperate.
 
-- **Combined Agent Mode**:
-  1. Initialize all available agents.
-  2. Broadcast tasks to multiple agents simultaneously.
-  3. Aggregate results from agents and select the best response.
-  4. Implement logic for conflict resolution in case of diverging results.
+### Six-Phase Execution Flow
+1. **Initialization**: Explain the setup required before the agent starts execution.
+2. **Rule Validation**: Describe how rules are validated for execution.
+3. **Skill Lookup**: Explain how and where skills are looked up.
+4. **Configuration Loading**: Describe how configurations are loaded and used.
+5. **Scope Determination**: Explain how the agent determines what tasks it should focus on.
+6. **Execution**: Describe how the final execution is carried out.
+
+## Shared vs Agent-Specific Skills and Rules
+- **Shared Skills**: Define skills that can be accessed by all agents.
+- **Agent-Specific Skills**: Define skills that are unique to individual agents.
+- **Shared Rules**: Define rules that apply across all agents.
+- **Agent-Specific Rules**: Define rules that are unique to specific agents.
