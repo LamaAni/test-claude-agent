@@ -1,0 +1,961 @@
+# Item Database - Comprehensive Packing Items with Weight and Volume Data
+
+# CLOTHING ITEMS
+clothing:
+  # Men's Tops
+  - name: T-shirt (men's cotton)
+    weight_grams: 150
+    volume_liters: 0.5
+    gender_applicability: [male]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [warm, hot]
+    activity_tags: [casual, beach, everyday]
+
+  - name: T-shirt (men's merino wool)
+    weight_grams: 180
+    volume_liters: 0.5
+    gender_applicability: [male]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [cool, mild, warm]
+    activity_tags: [travel, hiking, everyday]
+
+  - name: Button-down shirt (men's)
+    weight_grams: 250
+    volume_liters: 0.8
+    gender_applicability: [male]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [mild, warm]
+    activity_tags: [business, casual_nice, travel]
+
+  - name: Polo shirt (men's)
+    weight_grams: 200
+    volume_liters: 0.6
+    gender_applicability: [male]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [mild, warm, hot]
+    activity_tags: [business_casual, golf, travel]
+
+  - name: Long-sleeve shirt (men's)
+    weight_grams: 220
+    volume_liters: 0.7
+    gender_applicability: [male]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [cool, mild]
+    activity_tags: [travel, casual, layering]
+
+  - name: Sweater (men's lightweight)
+    weight_grams: 350
+    volume_liters: 1.2
+    gender_applicability: [male]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [cool, cold]
+    activity_tags: [layering, evening, travel]
+
+  - name: Fleece jacket (men's)
+    weight_grams: 500
+    volume_liters: 2.0
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [cool, cold]
+    activity_tags: [outdoor, layering, hiking]
+
+  - name: Dress shirt (men's)
+    weight_grams: 280
+    volume_liters: 0.9
+    gender_applicability: [male]
+    age_group: [adult, teen]
+    versatility_rating: 3
+    climate_suitability: [mild, warm]
+    activity_tags: [business, formal]
+
+  # Women's Tops
+  - name: T-shirt (women's cotton)
+    weight_grams: 120
+    volume_liters: 0.4
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [warm, hot]
+    activity_tags: [casual, beach, everyday]
+
+  - name: Blouse (women's)
+    weight_grams: 180
+    volume_liters: 0.6
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [mild, warm]
+    activity_tags: [business, casual_nice, travel]
+
+  - name: Tank top (women's)
+    weight_grams: 80
+    volume_liters: 0.3
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [warm, hot]
+    activity_tags: [casual, beach, layering]
+
+  - name: Long-sleeve shirt (women's)
+    weight_grams: 180
+    volume_liters: 0.6
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [cool, mild]
+    activity_tags: [travel, casual, layering]
+
+  - name: Cardigan (women's)
+    weight_grams: 300
+    volume_liters: 1.0
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [cool, mild]
+    activity_tags: [layering, evening, travel]
+
+  - name: Sweater (women's)
+    weight_grams: 320
+    volume_liters: 1.1
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [cool, cold]
+    activity_tags: [layering, casual, travel]
+
+  # Bottoms
+  - name: Jeans (men's)
+    weight_grams: 600
+    volume_liters: 1.5
+    gender_applicability: [male]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [cool, mild]
+    activity_tags: [casual, travel, everyday]
+
+  - name: Jeans (women's)
+    weight_grams: 500
+    volume_liters: 1.3
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [cool, mild]
+    activity_tags: [casual, travel, everyday]
+
+  - name: Shorts (men's)
+    weight_grams: 250
+    volume_liters: 0.8
+    gender_applicability: [male]
+    age_group: [adult, teen, child]
+    versatility_rating: 4
+    climate_suitability: [warm, hot]
+    activity_tags: [casual, beach, hiking]
+
+  - name: Shorts (women's)
+    weight_grams: 200
+    volume_liters: 0.7
+    gender_applicability: [female]
+    age_group: [adult, teen, child]
+    versatility_rating: 4
+    climate_suitability: [warm, hot]
+    activity_tags: [casual, beach, hiking]
+
+  - name: Dress pants (men's)
+    weight_grams: 450
+    volume_liters: 1.2
+    gender_applicability: [male]
+    age_group: [adult, teen]
+    versatility_rating: 3
+    climate_suitability: [cool, mild, warm]
+    activity_tags: [business, formal]
+
+  - name: Chinos/khakis (men's)
+    weight_grams: 400
+    volume_liters: 1.1
+    gender_applicability: [male]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [mild, warm]
+    activity_tags: [business_casual, travel]
+
+  - name: Skirt (women's)
+    weight_grams: 250
+    volume_liters: 0.8
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [mild, warm, hot]
+    activity_tags: [casual, business_casual]
+
+  - name: Dress (women's casual)
+    weight_grams: 300
+    volume_liters: 1.0
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [warm, hot]
+    activity_tags: [casual, beach, travel]
+
+  - name: Dress (women's formal)
+    weight_grams: 450
+    volume_liters: 1.5
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 3
+    climate_suitability: [mild, warm]
+    activity_tags: [formal, business]
+
+  - name: Leggings (women's)
+    weight_grams: 180
+    volume_liters: 0.5
+    gender_applicability: [female]
+    age_group: [adult, teen, child]
+    versatility_rating: 5
+    climate_suitability: [cool, mild]
+    activity_tags: [athletic, casual, layering]
+
+  # Outerwear
+  - name: Light rain jacket
+    weight_grams: 350
+    volume_liters: 1.5
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 5
+    climate_suitability: [cool, mild, warm]
+    activity_tags: [rain, travel, outdoor]
+
+  - name: Winter coat (heavy)
+    weight_grams: 1200
+    volume_liters: 4.0
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 3
+    climate_suitability: [cold, extreme_cold]
+    activity_tags: [winter, outdoor]
+
+  - name: Windbreaker
+    weight_grams: 300
+    volume_liters: 1.2
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 4
+    climate_suitability: [cool, mild]
+    activity_tags: [travel, outdoor, layering]
+
+  - name: Down jacket (packable)
+    weight_grams: 400
+    volume_liters: 1.8
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [cold]
+    activity_tags: [winter, travel, layering]
+
+  # Underwear & Base Layers
+  - name: Underwear (men's boxer briefs)
+    weight_grams: 60
+    volume_liters: 0.15
+    gender_applicability: [male]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [everyday, essential]
+
+  - name: Underwear (women's)
+    weight_grams: 40
+    volume_liters: 0.1
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [everyday, essential]
+
+  - name: Bra
+    weight_grams: 50
+    volume_liters: 0.2
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [everyday, essential]
+
+  - name: Sports bra
+    weight_grams: 80
+    volume_liters: 0.25
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [athletic, active]
+
+  - name: Socks (regular)
+    weight_grams: 50
+    volume_liters: 0.1
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [everyday, essential]
+
+  - name: Socks (wool hiking)
+    weight_grams: 80
+    volume_liters: 0.15
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 4
+    climate_suitability: [cool, cold]
+    activity_tags: [hiking, outdoor]
+
+  - name: Thermal underwear top
+    weight_grams: 200
+    volume_liters: 0.6
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [cold, extreme_cold]
+    activity_tags: [winter, layering]
+
+  - name: Thermal underwear bottom
+    weight_grams: 180
+    volume_liters: 0.5
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [cold, extreme_cold]
+    activity_tags: [winter, layering]
+
+  # Sleepwear & Swim
+  - name: Pajamas
+    weight_grams: 250
+    volume_liters: 0.8
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 3
+    climate_suitability: [all]
+    activity_tags: [sleep]
+
+  - name: Swimsuit (men's)
+    weight_grams: 150
+    volume_liters: 0.4
+    gender_applicability: [male]
+    age_group: [adult, teen, child]
+    versatility_rating: 3
+    climate_suitability: [warm, hot]
+    activity_tags: [beach, pool, water]
+
+  - name: Swimsuit (women's one-piece)
+    weight_grams: 180
+    volume_liters: 0.4
+    gender_applicability: [female]
+    age_group: [adult, teen, child]
+    versatility_rating: 3
+    climate_suitability: [warm, hot]
+    activity_tags: [beach, pool, water]
+
+  - name: Bikini
+    weight_grams: 100
+    volume_liters: 0.2
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 3
+    climate_suitability: [warm, hot]
+    activity_tags: [beach, pool]
+
+  # Formal & Business
+  - name: Suit jacket (men's)
+    weight_grams: 800
+    volume_liters: 2.5
+    gender_applicability: [male]
+    age_group: [adult, teen]
+    versatility_rating: 3
+    climate_suitability: [cool, mild]
+    activity_tags: [business, formal]
+
+  - name: Suit pants (men's)
+    weight_grams: 450
+    volume_liters: 1.2
+    gender_applicability: [male]
+    age_group: [adult, teen]
+    versatility_rating: 3
+    climate_suitability: [cool, mild, warm]
+    activity_tags: [business, formal]
+
+  - name: Tie
+    weight_grams: 80
+    volume_liters: 0.15
+    gender_applicability: [male]
+    age_group: [adult, teen]
+    versatility_rating: 3
+    climate_suitability: [all]
+    activity_tags: [business, formal]
+
+  - name: Belt
+    weight_grams: 200
+    volume_liters: 0.3
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [everyday, business]
+
+# FOOTWEAR
+footwear:
+  - name: Sneakers/trainers
+    weight_grams: 700
+    volume_liters: 3.0
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [everyday, walking, casual]
+
+  - name: Hiking boots
+    weight_grams: 1200
+    volume_liters: 4.0
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 3
+    climate_suitability: [cool, cold]
+    activity_tags: [hiking, outdoor, adventure]
+
+  - name: Sandals (men's)
+    weight_grams: 400
+    volume_liters: 1.5
+    gender_applicability: [male]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [warm, hot]
+    activity_tags: [beach, casual, summer]
+
+  - name: Sandals (women's)
+    weight_grams: 300
+    volume_liters: 1.2
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [warm, hot]
+    activity_tags: [beach, casual, summer]
+
+  - name: Flip-flops
+    weight_grams: 200
+    volume_liters: 0.8
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 3
+    climate_suitability: [warm, hot]
+    activity_tags: [beach, pool, casual]
+
+  - name: Dress shoes (men's)
+    weight_grams: 800
+    volume_liters: 3.0
+    gender_applicability: [male]
+    age_group: [adult, teen]
+    versatility_rating: 3
+    climate_suitability: [all]
+    activity_tags: [business, formal]
+
+  - name: Heels (women's)
+    weight_grams: 600
+    volume_liters: 2.5
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 2
+    climate_suitability: [all]
+    activity_tags: [formal, business]
+
+  - name: Flats (women's)
+    weight_grams: 350
+    volume_liters: 1.5
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [casual, business_casual, travel]
+
+  - name: Water shoes
+    weight_grams: 250
+    volume_liters: 1.0
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 3
+    climate_suitability: [warm, hot]
+    activity_tags: [water, beach, snorkeling]
+
+# TOILETRIES
+toiletries:
+  - name: Toothbrush
+    weight_grams: 20
+    volume_liters: 0.05
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [essential, hygiene]
+
+  - name: Toothpaste (travel size 50ml)
+    weight_grams: 60
+    volume_liters: 0.05
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [essential, hygiene]
+
+  - name: Shampoo (travel size 100ml)
+    weight_grams: 110
+    volume_liters: 0.1
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [hygiene]
+
+  - name: Soap bar
+    weight_grams: 100
+    volume_liters: 0.08
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [hygiene, travel]
+
+  - name: Deodorant (stick)
+    weight_grams: 80
+    volume_liters: 0.1
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [essential, hygiene]
+
+  - name: Razor (disposable)
+    weight_grams: 30
+    volume_liters: 0.05
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 3
+    climate_suitability: [all]
+    activity_tags: [grooming]
+
+  - name: Sunscreen (100ml SPF 50)
+    weight_grams: 120
+    volume_liters: 0.1
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 5
+    climate_suitability: [warm, hot]
+    activity_tags: [sun_protection, beach, outdoor]
+
+  - name: Moisturizer (50ml)
+    weight_grams: 60
+    volume_liters: 0.05
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [skincare]
+
+  - name: Makeup bag (basic)
+    weight_grams: 300
+    volume_liters: 0.5
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 3
+    climate_suitability: [all]
+    activity_tags: [beauty]
+
+  - name: Hair brush/comb
+    weight_grams: 80
+    volume_liters: 0.2
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [grooming]
+
+  - name: Feminine hygiene products (10-day supply)
+    weight_grams: 200
+    volume_liters: 0.4
+    gender_applicability: [female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [essential, hygiene]
+
+  - name: Contact lens solution (100ml)
+    weight_grams: 110
+    volume_liters: 0.1
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [essential, medical]
+
+  - name: Medications (1 week personal supply)
+    weight_grams: 100
+    volume_liters: 0.15
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [essential, medical]
+
+# ELECTRONICS
+electronics:
+  - name: Smartphone
+    weight_grams: 200
+    volume_liters: 0.15
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [essential, communication]
+
+  - name: Phone charger
+    weight_grams: 80
+    volume_liters: 0.1
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [essential, electronics]
+
+  - name: Laptop (15 inch)
+    weight_grams: 2000
+    volume_liters: 2.5
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [work, business, travel]
+
+  - name: Laptop charger
+    weight_grams: 350
+    volume_liters: 0.3
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [work, electronics]
+
+  - name: Power bank (20000mAh)
+    weight_grams: 400
+    volume_liters: 0.4
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [electronics, travel]
+
+  - name: Universal travel adapter
+    weight_grams: 150
+    volume_liters: 0.2
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [essential, international_travel]
+
+  - name: Camera (DSLR)
+    weight_grams: 800
+    volume_liters: 1.5
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 3
+    climate_suitability: [all]
+    activity_tags: [photography, hobby]
+
+  - name: Headphones (noise-canceling)
+    weight_grams: 250
+    volume_liters: 0.5
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [travel, entertainment]
+
+  - name: E-reader/tablet
+    weight_grams: 300
+    volume_liters: 0.3
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [entertainment, reading]
+
+# DOCUMENTS
+documents:
+  - name: Passport
+    weight_grams: 50
+    volume_liters: 0.02
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [essential, international_travel]
+
+  - name: Travel insurance documents
+    weight_grams: 20
+    volume_liters: 0.01
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [essential, travel]
+
+  - name: Boarding passes/tickets (printed)
+    weight_grams: 10
+    volume_liters: 0.01
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [travel]
+
+  - name: Credit cards/wallet
+    weight_grams: 100
+    volume_liters: 0.1
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [essential, everyday]
+
+# MEDICATIONS
+medications:
+  - name: First aid kit (basic)
+    weight_grams: 250
+    volume_liters: 0.5
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [safety, essential]
+
+  - name: Pain reliever (ibuprofen/acetaminophen)
+    weight_grams: 50
+    volume_liters: 0.05
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [medical, essential]
+
+  - name: Anti-diarrheal medication
+    weight_grams: 30
+    volume_liters: 0.03
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [medical, travel]
+
+  - name: Antihistamine (allergy medication)
+    weight_grams: 20
+    volume_liters: 0.02
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [medical]
+
+  - name: Motion sickness medication
+    weight_grams: 15
+    volume_liters: 0.02
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 3
+    climate_suitability: [all]
+    activity_tags: [medical, travel]
+
+  - name: Insect repellent (100ml)
+    weight_grams: 110
+    volume_liters: 0.1
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 4
+    climate_suitability: [warm, hot]
+    activity_tags: [outdoor, tropical]
+
+# ACTIVITY GEAR
+activity_gear:
+  - name: Daypack/backpack (20L)
+    weight_grams: 500
+    volume_liters: 2.0
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [travel, hiking, everyday]
+
+  - name: Water bottle (1L)
+    weight_grams: 200
+    volume_liters: 0.3
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [essential, outdoor, travel]
+
+  - name: Sunglasses (UV protection)
+    weight_grams: 50
+    volume_liters: 0.1
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [warm, hot]
+    activity_tags: [sun_protection, travel]
+
+  - name: Hat/cap (sun protection)
+    weight_grams: 100
+    volume_liters: 0.4
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 5
+    climate_suitability: [warm, hot]
+    activity_tags: [sun_protection, outdoor]
+
+  - name: Beach towel
+    weight_grams: 500
+    volume_liters: 1.5
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 3
+    climate_suitability: [warm, hot]
+    activity_tags: [beach, pool]
+
+  - name: Microfiber quick-dry towel
+    weight_grams: 200
+    volume_liters: 0.3
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [travel, outdoor, versatile]
+
+  - name: Snorkel mask & snorkel
+    weight_grams: 400
+    volume_liters: 1.0
+    gender_applicability: [male, female]
+    age_group: [adult, teen, child]
+    versatility_rating: 3
+    climate_suitability: [warm, hot]
+    activity_tags: [water, snorkeling, beach]
+
+  - name: Hiking poles (pair)
+    weight_grams: 500
+    volume_liters: 2.0
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 3
+    climate_suitability: [all]
+    activity_tags: [hiking, trekking]
+
+  - name: Travel pillow
+    weight_grams: 200
+    volume_liters: 1.0
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [travel, comfort]
+
+  - name: Eye mask & earplugs
+    weight_grams: 30
+    volume_liters: 0.05
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [travel, sleep]
+
+  - name: Travel umbrella (compact)
+    weight_grams: 300
+    volume_liters: 0.5
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [rain, travel]
+
+  - name: Dry bag (waterproof 10L)
+    weight_grams: 150
+    volume_liters: 0.2
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [water, outdoor, protection]
+
+  - name: Packing cubes (set of 3)
+    weight_grams: 200
+    volume_liters: 0.3
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [organization, travel]
+
+  - name: Reusable shopping bag
+    weight_grams: 50
+    volume_liters: 0.1
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 5
+    climate_suitability: [all]
+    activity_tags: [travel, practical]
+
+  - name: Book/reading material
+    weight_grams: 400
+    volume_liters: 0.5
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 3
+    climate_suitability: [all]
+    activity_tags: [entertainment, relaxation]
+
+  - name: Guidebook/maps
+    weight_grams: 300
+    volume_liters: 0.4
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 3
+    climate_suitability: [all]
+    activity_tags: [travel, navigation]
+
+  - name: Laundry detergent packets (10-pack)
+    weight_grams: 100
+    volume_liters: 0.15
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [travel, practical]
+
+  - name: Clothesline with clips
+    weight_grams: 80
+    volume_liters: 0.1
+    gender_applicability: [male, female]
+    age_group: [adult, teen]
+    versatility_rating: 4
+    climate_suitability: [all]
+    activity_tags: [travel, laundry]
+
+# NOTES ON USAGE:
+# - Weights are in grams (actual weight of items)
+# - Volume is in liters (space they occupy when packed)
+# - Versatility rating: 1-5 (5 = most versatile, works in many scenarios)
+# - Climate suitability: extreme_cold, cold, cool, mild, warm, hot
+# - Gender applicability: male, female (both if unisex)
+# - Age groups: child (0-12), teen (13-17), adult (18+)
+# - Activity tags help filter items by trip purpose
+
+# Total items: 100+ across all categories
+# Data based on typical travel item weights and volumes

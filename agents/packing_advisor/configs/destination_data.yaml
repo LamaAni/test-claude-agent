@@ -1,0 +1,605 @@
+# Destination Data - Location-Specific Requirements and Information
+
+destinations:
+  # ASIA
+  - name: Tokyo, Japan
+    country: Japan
+    region: Asia
+    power_outlets:
+      type: "A, B"
+      voltage: 100
+      frequency: 50/60
+    water_potability: tap_water_safe
+    laundry:
+      availability: widely_available
+      type: [coin_laundry, hotel_service]
+      average_cost_usd: 5-15
+    shopping_availability: excellent
+    major_stores: [Uniqlo, Don Quijote, convenience_stores]
+    transportation: [subway, train, bus, taxi]
+    cultural_dress_norms:
+      general: modest_casual
+      religious_sites: respectful_attire
+      business: conservative_formal
+      notes: "Remove shoes indoors, modest swimwear at public baths"
+    common_activities: [sightseeing, shopping, temples, food_tours, cultural]
+    climate_zone: temperate
+    special_notes:
+      - "Excellent public transit, IC card recommended"
+      - "Convenience stores everywhere for supplies"
+      - "Cash still important despite modernization"
+
+  - name: Bali, Indonesia
+    country: Indonesia
+    region: Southeast_Asia
+    power_outlets:
+      type: "C, F"
+      voltage: 220
+      frequency: 50
+    water_potability: bottled_water_only
+    laundry:
+      availability: widely_available
+      type: [hotel_service, local_laundry]
+      average_cost_usd: 3-10
+    shopping_availability: good
+    major_stores: [local_markets, supermarkets, tourist_shops]
+    transportation: [scooter_rental, car_rental, taxi, private_driver]
+    cultural_dress_norms:
+      general: casual_beachwear
+      religious_sites: modest_required
+      business: business_casual
+      notes: "Shoulders and knees covered at temples, sarong often provided or required"
+    common_activities: [beach, surfing, temples, yoga, cultural, rice_terraces]
+    climate_zone: tropical
+    special_notes:
+      - "Hindu culture, many temples require modest dress"
+      - "Scooter popular transport, helmet required"
+      - "Rainy season Nov-Mar, dry season Apr-Oct"
+      - "Affordable laundry services everywhere"
+
+  - name: Bangkok, Thailand
+    country: Thailand
+    region: Southeast_Asia
+    power_outlets:
+      type: "A, B, C"
+      voltage: 220
+      frequency: 50
+    water_potability: bottled_water_recommended
+    laundry:
+      availability: widely_available
+      type: [coin_laundry, hotel_service, local_shops]
+      average_cost_usd: 2-8
+    shopping_availability: excellent
+    major_stores: [malls, markets, 7-Eleven]
+    transportation: [BTS_skytrain, MRT_subway, taxi, tuk_tuk, boat]
+    cultural_dress_norms:
+      general: casual_hot_weather
+      religious_sites: modest_required
+      business: business_formal
+      notes: "Cover shoulders and knees at temples, remove shoes"
+    common_activities: [temples, shopping, street_food, markets, cultural]
+    climate_zone: tropical
+    special_notes:
+      - "Hot and humid year-round"
+      - "Excellent shopping for clothes and electronics"
+      - "Respect for royal family very important"
+
+  - name: Singapore
+    country: Singapore
+    region: Southeast_Asia
+    power_outlets:
+      type: "G"
+      voltage: 230
+      frequency: 50
+    water_potability: tap_water_safe
+    laundry:
+      availability: widely_available
+      type: [coin_laundry, hotel_service]
+      average_cost_usd: 8-20
+    shopping_availability: excellent
+    major_stores: [Orchard_Road_malls, departmentstores]
+    transportation: [MRT, bus, taxi, walk]
+    cultural_dress_norms:
+      general: smart_casual
+      religious_sites: modest_respectful
+      business: business_formal
+      notes: "Multi-cultural, generally conservative"
+    common_activities: [shopping, food, gardens, sightseeing, business]
+    climate_zone: tropical
+    special_notes:
+      - "Very clean, strict laws (fines for littering, etc.)"
+      - "Expensive compared to region"
+      - "Excellent public transit"
+      - "Hot and humid year-round"
+
+  # EUROPE
+  - name: Paris, France
+    country: France
+    region: Western_Europe
+    power_outlets:
+      type: "C, E"
+      voltage: 230
+      frequency: 50
+    water_potability: tap_water_safe
+    laundry:
+      availability: moderate
+      type: [laverie_self_service, hotel_service]
+      average_cost_usd: 8-15
+    shopping_availability: excellent
+    major_stores: [department_stores, boutiques, Monoprix]
+    transportation: [metro, bus, RER, taxi, bike]
+    cultural_dress_norms:
+      general: stylish_casual
+      religious_sites: modest_respectful
+      business: business_formal_elegant
+      notes: "Fashion-conscious city, smart casual common"
+    common_activities: [museums, sightseeing, dining, shopping, cultural]
+    climate_zone: temperate
+    special_notes:
+      - "Fashion capital, people dress well"
+      - "Metro is excellent"
+      - "Many museums and attractions"
+
+  - name: London, United Kingdom
+    country: United_Kingdom
+    region: Western_Europe
+    power_outlets:
+      type: "G"
+      voltage: 230
+      frequency: 50
+    water_potability: tap_water_safe
+    laundry:
+      availability: moderate
+      type: [laundrette, hotel_service]
+      average_cost_usd: 10-20
+    shopping_availability: excellent
+    major_stores: [department_stores, high_street, markets]
+    transportation: [Underground, bus, taxi, train]
+    cultural_dress_norms:
+      general: business_casual
+      religious_sites: respectful
+      business: business_formal
+      notes: "Weather-appropriate layers, often rainy"
+    common_activities: [museums, theater, shopping, sightseeing, business]
+    climate_zone: temperate_maritime
+    special_notes:
+      - "Unpredictable weather, always pack rain jacket"
+      - "Expensive city"
+      - "Excellent public transit (Oyster card)"
+      - "Many free museums"
+
+  - name: Barcelona, Spain
+    country: Spain
+    region: Southern_Europe
+    power_outlets:
+      type: "C, F"
+      voltage: 230
+      frequency: 50
+    water_potability: tap_water_safe
+    laundry:
+      availability: good
+      type: [lavandería, hotel_service]
+      average_cost_usd: 6-12
+    shopping_availability: excellent
+    major_stores: [El_Corte_Inglés, markets, boutiques]
+    transportation: [metro, bus, taxi, bike, walk]
+    cultural_dress_norms:
+      general: casual_relaxed
+      religious_sites: modest_required
+      business: business_casual
+      notes: "Beach casual common, stylish"
+    common_activities: [beach, Gaudí_architecture, dining, nightlife, cultural]
+    climate_zone: mediterranean
+    special_notes:
+      - "Mediterranean climate, warm summers"
+      - "Siesta culture, shops close midday"
+      - "Pickpocketing in tourist areas, watch belongings"
+      - "Beach and city combined"
+
+  - name: Rome, Italy
+    country: Italy
+    region: Southern_Europe
+    power_outlets:
+      type: "C, F, L"
+      voltage: 230
+      frequency: 50
+    water_potability: tap_water_safe
+    laundry:
+      availability: moderate
+      type: [lavanderia, hotel_service]
+      average_cost_usd: 8-15
+    shopping_availability: excellent
+    major_stores: [department_stores, boutiques, markets]
+    transportation: [metro, bus, taxi, walk]
+    cultural_dress_norms:
+      general: stylish_casual
+      religious_sites: modest_required_strict
+      business: business_formal
+      notes: "Vatican and churches require covered shoulders/knees, scarf useful"
+    common_activities: [historical_sites, museums, dining, shopping, cultural]
+    climate_zone: mediterranean
+    special_notes:
+      - "Many religious sites, modest dress essential"
+      - "Hot in summer, pack light layers"
+      - "Lots of walking on cobblestones"
+
+  - name: Amsterdam, Netherlands
+    country: Netherlands
+    region: Western_Europe
+    power_outlets:
+      type: "C, F"
+      voltage: 230
+      frequency: 50
+    water_potability: tap_water_safe
+    laundry:
+      availability: good
+      type: [wasserette, hotel_service]
+      average_cost_usd: 8-15
+    shopping_availability: excellent
+    major_stores: [department_stores, markets, boutiques]
+    transportation: [bike, tram, bus, metro, walk]
+    cultural_dress_norms:
+      general: casual_practical
+      religious_sites: respectful
+      business: business_casual
+      notes: "Liberal, casual city"
+    common_activities: [museums, cycling, canals, dining, cultural]
+    climate_zone: temperate_maritime
+    special_notes:
+      - "Bike-friendly city, bike rental common"
+      - "Rainy climate, pack rain gear"
+      - "Compact city, very walkable"
+
+  # NORTH AMERICA
+  - name: New York City, USA
+    country: United_States
+    region: North_America
+    power_outlets:
+      type: "A, B"
+      voltage: 120
+      frequency: 60
+    water_potability: tap_water_safe
+    laundry:
+      availability: widely_available
+      type: [laundromat, hotel_service]
+      average_cost_usd: 10-25
+    shopping_availability: excellent
+    major_stores: [department_stores, countless_shops]
+    transportation: [subway, bus, taxi, walk]
+    cultural_dress_norms:
+      general: casual_to_formal
+      religious_sites: respectful
+      business: business_formal
+      notes: "Fashion-forward city, dress varies by neighborhood"
+    common_activities: [museums, theater, dining, shopping, sightseeing]
+    climate_zone: continental
+    special_notes:
+      - "Four distinct seasons, pack accordingly"
+      - "Lots of walking, comfortable shoes essential"
+      - "Excellent shopping if you need anything"
+      - "Expensive city"
+
+  - name: Los Angeles, USA
+    country: United_States
+    region: North_America
+    power_outlets:
+      type: "A, B"
+      voltage: 120
+      frequency: 60
+    water_potability: tap_water_safe
+    laundry:
+      availability: widely_available
+      type: [laundromat, hotel_service]
+      average_cost_usd: 8-20
+    shopping_availability: excellent
+    major_stores: [malls, countless_shops]
+    transportation: [car_essential, limited_public_transit, rideshare]
+    cultural_dress_norms:
+      general: very_casual
+      religious_sites: casual_respectful
+      business: business_casual
+      notes: "Very casual, beach culture, fitness-oriented"
+    common_activities: [beaches, hiking, entertainment, dining, shopping]
+    climate_zone: mediterranean
+    special_notes:
+      - "Car recommended, public transit limited"
+      - "Warm and sunny most of year"
+      - "Casual dress norm"
+      - "Sunscreen essential year-round"
+
+  - name: Vancouver, Canada
+    country: Canada
+    region: North_America
+    power_outlets:
+      type: "A, B"
+      voltage: 120
+      frequency: 60
+    water_potability: tap_water_safe
+    laundry:
+      availability: widely_available
+      type: [laundromat, hotel_service]
+      average_cost_usd: 8-15
+    shopping_availability: excellent
+    major_stores: [malls, outdoor_equipment_stores]
+    transportation: [SkyTrain, bus, SeaBus, bike, walk]
+    cultural_dress_norms:
+      general: outdoor_casual
+      religious_sites: respectful
+      business: business_casual
+      notes: "Outdoorsy, practical style"
+    common_activities: [hiking, skiing, water_activities, sightseeing, dining]
+    climate_zone: temperate_maritime
+    special_notes:
+      - "Rainy, especially fall/winter"
+      - "Mild temperatures but wet"
+      - "Outdoor activity oriented"
+      - "Layers essential"
+
+  # AUSTRALIA / OCEANIA
+  - name: Sydney, Australia
+    country: Australia
+    region: Oceania
+    power_outlets:
+      type: "I"
+      voltage: 230
+      frequency: 50
+    water_potability: tap_water_safe
+    laundry:
+      availability: widely_available
+      type: [laundromat, hotel_service]
+      average_cost_usd: 8-15
+    shopping_availability: excellent
+    major_stores: [Westfield_malls, department_stores]
+    transportation: [train, bus, ferry, taxi, walk]
+    cultural_dress_norms:
+      general: casual_beach
+      religious_sites: respectful
+      business: business_casual
+      notes: "Very casual, beach culture"
+    common_activities: [beaches, outdoor_activities, sightseeing, dining]
+    climate_zone: temperate
+    special_notes:
+      - "Sunny and warm, sun protection critical"
+      - "High UV levels, SPF 50+ essential"
+      - "Outdoor lifestyle, casual dress"
+      - "Expensive city"
+
+  # SOUTH AMERICA
+  - name: Rio de Janeiro, Brazil
+    country: Brazil
+    region: South_America
+    power_outlets:
+      type: "C, N"
+      voltage: 127/220
+      frequency: 60
+    water_potability: bottled_water_recommended
+    laundry:
+      availability: widely_available
+      type: [lavanderia, hotel_service]
+      average_cost_usd: 5-12
+    shopping_availability: good
+    major_stores: [shopping_centers, markets]
+    transportation: [metro, bus, taxi, rideshare]
+    cultural_dress_norms:
+      general: casual_beach
+      religious_sites: modest
+      business: business_casual
+      notes: "Beach culture, revealing swimwear common at beach"
+    common_activities: [beach, sightseeing, nightlife, hiking, cultural]
+    climate_zone: tropical
+    special_notes:
+      - "Hot and humid, minimal clothing"
+      - "Beach culture, swimwear normal near beaches"
+      - "Safety awareness important, avoid flashy items"
+      - "Portuguese language, limited English"
+
+  # AFRICA
+  - name: Cape Town, South Africa
+    country: South_Africa
+    region: Africa
+    power_outlets:
+      type: "D, M, N"
+      voltage: 230
+      frequency: 50
+    water_potability: tap_water_safe
+    laundry:
+      availability: widely_available
+      type: [launderette, hotel_service]
+      average_cost_usd: 5-12
+    shopping_availability: excellent
+    major_stores: [malls, markets]
+    transportation: [car_recommended, bus, taxi, rideshare]
+    cultural_dress_norms:
+      general: casual_comfortable
+      religious_sites: respectful
+      business: business_casual
+      notes: "Casual, outdoor-oriented"
+    common_activities: [beaches, hiking, wine_tours, sightseeing, wildlife]
+    climate_zone: mediterranean
+    special_notes:
+      - "Mediterranean climate, warm dry summers"
+      - "Wine country nearby"
+      - "Car useful for exploring"
+      - "Strong sun, protection needed"
+
+  - name: Marrakech, Morocco
+    country: Morocco
+    region: North_Africa
+    power_outlets:
+      type: "C, E"
+      voltage: 220
+      frequency: 50
+    water_potability: bottled_water_only
+    laundry:
+      availability: moderate
+      type: [hotel_service, local_shops]
+      average_cost_usd: 5-10
+    shopping_availability: excellent
+    major_stores: [souks, markets, modern_shops]
+    transportation: [taxi, walking, private_driver]
+    cultural_dress_norms:
+      general: modest_required
+      religious_sites: very_modest_required
+      business: formal_conservative
+      notes: "Islamic culture, shoulders and knees covered, women consider headscarf"
+    common_activities: [souks, palaces, gardens, cultural, dining]
+    climate_zone: arid
+    special_notes:
+      - "Conservative Islamic culture, dress modestly"
+      - "Hot and dry, sun protection essential"
+      - "Ramadan affects dining and schedules"
+      - "Negotiation common in souks"
+
+  # MIDDLE EAST
+  - name: Dubai, UAE
+    country: United_Arab_Emirates
+    region: Middle_East
+    power_outlets:
+      type: "G"
+      voltage: 220
+      frequency: 50
+    water_potability: tap_water_safe
+    laundry:
+      availability: widely_available
+      type: [hotel_service, laundry_services]
+      average_cost_usd: 10-25
+    shopping_availability: excellent
+    major_stores: [mega_malls, luxury_brands]
+    transportation: [metro, bus, taxi, car]
+    cultural_dress_norms:
+      general: modest_required
+      religious_sites: very_modest_required
+      business: business_formal
+      notes: "Shoulders and knees covered in public, more relaxed in hotels/beach clubs"
+    common_activities: [shopping, dining, desert_safari, beaches, modern_attractions]
+    climate_zone: desert
+    special_notes:
+      - "Extremely hot summers, very strong AC indoors"
+      - "Modest dress in public areas"
+      - "Alcohol only in hotels/licensed venues"
+      - "Expensive city"
+
+  # ADDITIONAL DESTINATIONS
+  - name: Reykjavik, Iceland
+    country: Iceland
+    region: Northern_Europe
+    power_outlets:
+      type: "C, F"
+      voltage: 230
+      frequency: 50
+    water_potability: tap_water_safe
+    laundry:
+      availability: moderate
+      type: [laundrette, hotel_service]
+      average_cost_usd: 10-20
+    shopping_availability: good
+    major_stores: [downtown_shops, outdoor_equipment]
+    transportation: [bus, car_rental_recommended, walk]
+    cultural_dress_norms:
+      general: outdoor_practical
+      religious_sites: casual_respectful
+      business: business_casual
+      notes: "Practical, weather-appropriate"
+    common_activities: [Northern_Lights, hot_springs, hiking, glaciers, waterfalls]
+    climate_zone: subarctic
+    special_notes:
+      - "Cold and windy, layer heavily"
+      - "Expensive destination"
+      - "Weather changes rapidly"
+      - "Car rental useful for exploring"
+      - "Thermal swimwear for hot springs"
+
+  - name: Cancun, Mexico
+    country: Mexico
+    region: Central_America
+    power_outlets:
+      type: "A, B"
+      voltage: 127
+      frequency: 60
+    water_potability: bottled_water_recommended
+    laundry:
+      availability: widely_available
+      type: [hotel_service, local_laundry]
+      average_cost_usd: 5-15
+    shopping_availability: good
+    major_stores: [shopping_centers, tourist_shops, markets]
+    transportation: [bus, taxi, rental_car, hotel_shuttle]
+    cultural_dress_norms:
+      general: beach_resort_casual
+      religious_sites: modest
+      business: business_casual
+      notes: "Very casual, beach/resort oriented"
+    common_activities: [beach, snorkeling, Mayan_ruins, water_sports, dining]
+    climate_zone: tropical
+    special_notes:
+      - "Hot and humid year-round"
+      - "Resort-focused, very casual"
+      - "Hurricane season June-November"
+      - "Strong sun, high SPF essential"
+
+  - name: Kyoto, Japan
+    country: Japan
+    region: Asia
+    power_outlets:
+      type: "A, B"
+      voltage: 100
+      frequency: 50/60
+    water_potability: tap_water_safe
+    laundry:
+      availability: widely_available
+      type: [coin_laundry, hotel_service]
+      average_cost_usd: 5-12
+    shopping_availability: excellent
+    major_stores: [department_stores, traditional_shops, convenience_stores]
+    transportation: [bus, train, subway, bike, taxi, walk]
+    cultural_dress_norms:
+      general: modest_casual
+      religious_sites: very_respectful_required
+      business: business_formal
+      notes: "Traditional city, modest dress appreciated at temples"
+    common_activities: [temples, gardens, cultural_experiences, tea_ceremony, dining]
+    climate_zone: temperate
+    special_notes:
+      - "Many temples and shrines, modest dress essential"
+      - "Excellent public transit and walking city"
+      - "Traditional culture, remove shoes often"
+      - "Four distinct seasons"
+
+  - name: Machu Picchu region, Peru
+    country: Peru
+    region: South_America
+    power_outlets:
+      type: "A, B, C"
+      voltage: 220
+      frequency: 60
+    water_potability: bottled_water_only
+    laundry:
+      availability: moderate
+      type: [local_laundry, hotel_service]
+      average_cost_usd: 3-8
+    shopping_availability: moderate
+    major_stores: [local_markets, tourist_shops]
+    transportation: [train, bus, taxi, walk]
+    cultural_dress_norms:
+      general: practical_outdoor
+      religious_sites: respectful
+      business: business_casual
+      notes: "Practical, layered for altitude and weather"
+    common_activities: [hiking, Inca_ruins, cultural_tours, photography]
+    climate_zone: high_altitude_tropical
+    special_notes:
+      - "High altitude (2400m+), acclimatization needed"
+      - "Layers essential, temperature varies greatly"
+      - "Sturdy hiking shoes required"
+      - "Sun protection critical at altitude"
+      - "Rain gear needed, especially Nov-Mar"
+
+# USAGE NOTES:
+# - Power outlet types: Refer to international standards (A, B, C, etc.)
+# - Water potability: tap_water_safe, tap_water_safe_caution, bottled_water_recommended, bottled_water_only
+# - Laundry availability: widely_available, good, moderate, limited
+# - Shopping availability: excellent, good, moderate, limited
+# - Climate zones help cross-reference with climate rules
+
+# Total: 20 major destinations covering all continents
+# Data reflects typical conditions and cultural norms as of 2026

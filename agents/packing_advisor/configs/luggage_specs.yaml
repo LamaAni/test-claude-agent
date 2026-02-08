@@ -1,0 +1,583 @@
+# Luggage Specifications - Types, Capacities, and Recommendations
+
+luggage_types:
+  # CARRY-ON LUGGAGE
+  - name: International Carry-On (Standard)
+    type: carry_on
+    capacity_liters: 40
+    empty_weight_kg: 2.5
+    dimensions_cm:
+      length: 55
+      width: 40
+      height: 20
+    dimensions_inches:
+      length: 22
+      width: 16
+      height: 8
+    best_use_cases:
+      - short_trips_3_5_days
+      - business_travel
+      - minimalist_packing
+      - avoiding_baggage_fees
+    price_range_usd:
+      budget: 50-100
+      mid_range: 100-250
+      premium: 250-600
+    popular_brands:
+      - Samsonite
+      - Travelpro
+      - Away
+      - Rimowa
+    features:
+      - four_wheels
+      - telescopic_handle
+      - laptop_compartment_optional
+      - expandable_optional
+    weight_rating: light
+    notes: "Fits most airline overhead bins, ideal for short trips"
+
+  - name: US Domestic Carry-On
+    type: carry_on
+    capacity_liters: 45
+    empty_weight_kg: 2.8
+    dimensions_cm:
+      length: 56
+      width: 36
+      height: 23
+    dimensions_inches:
+      length: 22
+      width: 14
+      height: 9
+    best_use_cases:
+      - us_domestic_travel
+      - week_long_trips
+      - business_travel
+    price_range_usd:
+      budget: 50-120
+      mid_range: 120-300
+      premium: 300-700
+    popular_brands:
+      - Travelpro
+      - Samsonite
+      - Briggs_Riley
+    features:
+      - four_wheels
+      - expandable
+      - durable_construction
+    weight_rating: light_to_medium
+    notes: "Slightly larger than international standard, check airline limits"
+
+  - name: Underseat Personal Item (Wheeled)
+    type: personal_item
+    capacity_liters: 18
+    empty_weight_kg: 1.5
+    dimensions_cm:
+      length: 45
+      width: 35
+      height: 20
+    dimensions_inches:
+      length: 18
+      width: 14
+      height: 8
+    best_use_cases:
+      - ultra_light_travel
+      - additional_to_carry_on
+      - day_trips
+    price_range_usd:
+      budget: 40-80
+      mid_range: 80-150
+      premium: 150-300
+    popular_brands:
+      - Travelpro
+      - eBags
+      - Samsonite
+    features:
+      - two_wheels
+      - fits_under_seat
+      - multiple_compartments
+    weight_rating: very_light
+    notes: "Must fit under seat, good for maximizing carry-on allowance"
+
+  # CHECKED LUGGAGE
+  - name: Medium Checked Suitcase
+    type: checked
+    capacity_liters: 65
+    empty_weight_kg: 4.0
+    dimensions_cm:
+      length: 66
+      width: 45
+      height: 28
+    dimensions_inches:
+      length: 26
+      width: 18
+      height: 11
+    best_use_cases:
+      - week_long_trips
+      - standard_vacation
+      - moderate_packing
+    price_range_usd:
+      budget: 60-120
+      mid_range: 120-300
+      premium: 300-800
+    popular_brands:
+      - Samsonite
+      - Delsey
+      - American_Tourister
+      - Away
+    features:
+      - four_wheels
+      - expandable
+      - TSA_lock
+      - durable_shell
+    weight_rating: medium
+    notes: "Most popular size, fits standard 23kg airline limit comfortably"
+
+  - name: Large Checked Suitcase
+    type: checked
+    capacity_liters: 95
+    empty_weight_kg: 5.0
+    dimensions_cm:
+      length: 75
+      width: 50
+      height: 30
+    dimensions_inches:
+      length: 30
+      width: 20
+      height: 12
+    best_use_cases:
+      - long_trips_2_weeks_plus
+      - family_travel
+      - cold_weather_bulky_items
+      - extended_stay
+    price_range_usd:
+      budget: 80-150
+      mid_range: 150-350
+      premium: 350-900
+    popular_brands:
+      - Samsonite
+      - Delsey
+      - Travelpro
+      - Rimowa
+    features:
+      - four_wheels
+      - expandable
+      - TSA_lock
+      - heavy_duty
+    weight_rating: heavy
+    notes: "Maximum standard size, still within 158cm linear dimension limit"
+
+  - name: Extra Large Checked Suitcase
+    type: checked
+    capacity_liters: 120
+    empty_weight_kg: 5.5
+    dimensions_cm:
+      length: 81
+      width: 55
+      height: 35
+    dimensions_inches:
+      length: 32
+      width: 22
+      height: 14
+    best_use_cases:
+      - very_long_trips
+      - family_travel_with_kids
+      - moving_relocation
+      - bulky_equipment
+    price_range_usd:
+      budget: 90-180
+      mid_range: 180-400
+      premium: 400-1000
+    popular_brands:
+      - Samsonite
+      - Delsey
+      - Eagle_Creek
+    features:
+      - four_wheels
+      - very_durable
+      - TSA_lock
+      - extra_capacity
+    weight_rating: very_heavy
+    notes: "Often exceeds standard size, may incur oversized fees. Total 171cm linear"
+
+  # BACKPACKS & DUFFELS
+  - name: Travel Backpack (40L)
+    type: backpack
+    capacity_liters: 40
+    empty_weight_kg: 1.2
+    dimensions_cm:
+      length: 55
+      width: 35
+      height: 20
+    dimensions_inches:
+      length: 22
+      width: 14
+      height: 8
+    best_use_cases:
+      - backpacking
+      - adventure_travel
+      - carry_on_flexibility
+      - hands_free_travel
+    price_range_usd:
+      budget: 50-100
+      mid_range: 100-200
+      premium: 200-400
+    popular_brands:
+      - Osprey
+      - Patagonia
+      - REI
+      - Eagle_Creek
+      - Tortuga
+    features:
+      - laptop_compartment
+      - multiple_pockets
+      - padded_straps
+      - water_resistant
+    weight_rating: light
+    notes: "Carry-on sized, popular with digital nomads and backpackers"
+
+  - name: Hiking Backpack (65L)
+    type: backpack
+    capacity_liters: 65
+    empty_weight_kg: 2.0
+    dimensions_cm:
+      length: 75
+      width: 35
+      height: 30
+    dimensions_inches:
+      length: 30
+      width: 14
+      height: 12
+    best_use_cases:
+      - extended_backpacking
+      - camping_trips
+      - trekking
+      - outdoor_adventure
+    price_range_usd:
+      budget: 100-200
+      mid_range: 200-350
+      premium: 350-600
+    popular_brands:
+      - Osprey
+      - Gregory
+      - Deuter
+      - REI
+    features:
+      - frame_support
+      - hip_belt
+      - rain_cover
+      - multiple_compartments
+    weight_rating: medium
+    notes: "Must be checked on flights, ideal for serious outdoor trips"
+
+  - name: Duffel Bag (Medium 50L)
+    type: duffel
+    capacity_liters: 50
+    empty_weight_kg: 0.8
+    dimensions_cm:
+      length: 60
+      width: 30
+      height: 30
+    dimensions_inches:
+      length: 24
+      width: 12
+      height: 12
+    best_use_cases:
+      - gym_and_travel
+      - sports_equipment
+      - weekend_trips
+      - flexible_packing
+    price_range_usd:
+      budget: 30-70
+      mid_range: 70-150
+      premium: 150-300
+    popular_brands:
+      - The_North_Face
+      - Patagonia
+      - Nike
+      - Under_Armour
+    features:
+      - shoulder_strap
+      - backpack_straps_optional
+      - durable_fabric
+      - water_resistant
+    weight_rating: light
+    notes: "Versatile, soft-sided, but harder to organize than suitcase"
+
+  - name: Large Duffel Bag (90L)
+    type: duffel
+    capacity_liters: 90
+    empty_weight_kg: 1.2
+    dimensions_cm:
+      length: 75
+      width: 40
+      height: 35
+    dimensions_inches:
+      length: 30
+      width: 16
+      height: 14
+    best_use_cases:
+      - expedition_travel
+      - sports_team_equipment
+      - military_style_travel
+      - adventure_sports
+    price_range_usd:
+      budget: 50-100
+      mid_range: 100-200
+      premium: 200-400
+    popular_brands:
+      - The_North_Face
+      - Patagonia
+      - Eagle_Creek
+    features:
+      - very_durable
+      - backpack_straps
+      - compression_straps
+      - weather_resistant
+    weight_rating: light_to_medium
+    notes: "Maximum capacity, must be checked, great for bulky gear"
+
+  # SPECIALTY LUGGAGE
+  - name: Garment Bag (Wheeled)
+    type: specialty
+    capacity_liters: 55
+    empty_weight_kg: 3.5
+    dimensions_cm:
+      length: 60
+      width: 55
+      height: 25
+    dimensions_inches:
+      length: 24
+      width: 22
+      height: 10
+    best_use_cases:
+      - business_travel_with_suits
+      - formal_event_travel
+      - wedding_travel
+      - professional_presentations
+    price_range_usd:
+      budget: 80-150
+      mid_range: 150-300
+      premium: 300-700
+    popular_brands:
+      - Briggs_Riley
+      - Travelpro
+      - Samsonite
+    features:
+      - hangs_suits
+      - wheels
+      - multiple_pockets
+      - shoe_compartments
+    weight_rating: medium
+    notes: "Keeps formal wear wrinkle-free, can be carry-on or checked"
+
+  - name: Rolling Duffel (70L)
+    type: duffel
+    capacity_liters: 70
+    empty_weight_kg: 2.8
+    dimensions_cm:
+      length: 70
+      width: 35
+      height: 35
+    dimensions_inches:
+      length: 28
+      width: 14
+      height: 14
+    best_use_cases:
+      - sports_travel
+      - adventure_travel
+      - flexible_packing_needs
+      - rugged_travel
+    price_range_usd:
+      budget: 60-120
+      mid_range: 120-250
+      premium: 250-500
+    popular_brands:
+      - The_North_Face
+      - Patagonia
+      - Eagle_Creek
+    features:
+      - wheels
+      - backpack_straps
+      - durable_fabric
+      - weather_resistant
+    weight_rating: medium
+    notes: "Combines duffel flexibility with wheeled convenience"
+
+  - name: Hard-Shell Carry-On
+    type: carry_on
+    capacity_liters: 38
+    empty_weight_kg: 3.0
+    dimensions_cm:
+      length: 55
+      width: 40
+      height: 20
+    dimensions_inches:
+      length: 22
+      width: 16
+      height: 8
+    best_use_cases:
+      - protecting_fragile_items
+      - security_conscious
+      - modern_sleek_travel
+      - short_business_trips
+    price_range_usd:
+      budget: 70-150
+      mid_range: 150-350
+      premium: 350-1000
+    popular_brands:
+      - Away
+      - Rimowa
+      - Samsonite
+      - Delsey
+    features:
+      - polycarbonate_shell
+      - four_wheels
+      - TSA_lock
+      - scratch_resistant
+    weight_rating: medium
+    notes: "Heavier than soft-sided but better protection, trendy design"
+
+  - name: Lightweight Foldable Duffel
+    type: duffel
+    capacity_liters: 35
+    empty_weight_kg: 0.3
+    dimensions_cm:
+      length: 50
+      width: 25
+      height: 25
+    dimensions_inches:
+      length: 20
+      width: 10
+      height: 10
+    best_use_cases:
+      - extra_bag_for_souvenirs
+      - day_trips
+      - laundry_bag
+      - emergency_extra_capacity
+    price_range_usd:
+      budget: 15-30
+      mid_range: 30-60
+      premium: 60-120
+    popular_brands:
+      - eBags
+      - Eagle_Creek
+      - REI
+    features:
+      - ultra_light
+      - packs_into_itself
+      - water_resistant
+      - shoulder_strap
+    weight_rating: ultra_light
+    notes: "Packs down small, perfect as backup bag for return trip shopping"
+
+  - name: Wheeled Laptop Bag
+    type: personal_item
+    capacity_liters: 20
+    empty_weight_kg: 2.0
+    dimensions_cm:
+      length: 43
+      width: 35
+      height: 23
+    dimensions_inches:
+      length: 17
+      width: 14
+      height: 9
+    best_use_cases:
+      - business_travel
+      - short_work_trips
+      - commuter_travel
+      - professional_appearance
+    price_range_usd:
+      budget: 50-100
+      mid_range: 100-200
+      premium: 200-400
+    popular_brands:
+      - Travelpro
+      - Samsonite
+      - Tumi
+    features:
+      - laptop_protection_up_to_17_inch
+      - two_wheels
+      - professional_appearance
+      - document_organization
+    weight_rating: medium
+    notes: "Professional look, fits under seat, perfect for business travelers"
+
+# PACKING EFFICIENCY RATINGS
+packing_efficiency:
+  - luggage_type: hard_shell
+    efficiency_rating: 3
+    notes: "Less flexible, rigid shape wastes some space"
+  
+  - luggage_type: soft_shell_suitcase
+    efficiency_rating: 4
+    notes: "Some flexibility, expandable options available"
+  
+  - luggage_type: backpack
+    efficiency_rating: 5
+    notes: "Most flexible, can stuff into all corners, adjusts to contents"
+  
+  - luggage_type: duffel
+    efficiency_rating: 5
+    notes: "Very flexible, adapts to contents, but harder to organize"
+
+# RECOMMENDATIONS BY TRIP TYPE
+trip_type_recommendations:
+  weekend_getaway:
+    ideal_luggage: [International Carry-On (Standard), Travel Backpack (40L)]
+    avoid: [Extra Large Checked Suitcase, Hiking Backpack (65L)]
+    
+  week_long_vacation:
+    ideal_luggage: [Medium Checked Suitcase, Large Checked Suitcase]
+    avoid: [Underseat Personal Item (Wheeled)]
+    
+  business_trip_3_5_days:
+    ideal_luggage: [International Carry-On (Standard), Garment Bag (Wheeled), Wheeled Laptop Bag]
+    avoid: [Duffel bags, hiking backpacks]
+    
+  backpacking_adventure:
+    ideal_luggage: [Travel Backpack (40L), Hiking Backpack (65L)]
+    avoid: [Hard-shell luggage, wheeled suitcases]
+    
+  beach_resort_week:
+    ideal_luggage: [Medium Checked Suitcase, Duffel Bag (Medium 50L)]
+    avoid: [Garment Bag, heavy hard-shells]
+    
+  family_trip:
+    ideal_luggage: [Large Checked Suitcase, Multiple Medium Checked Suitcases]
+    avoid: [Only carry-ons for family of 4+]
+    
+  extended_travel_2_weeks_plus:
+    ideal_luggage: [Large Checked Suitcase, Travel Backpack (40L)]
+    avoid: [Small carry-ons only]
+
+# LUGGAGE SELECTION DECISION FACTORS
+selection_factors:
+  - factor: trip_duration
+    guideline: "1-3 days: carry-on, 4-7 days: medium checked, 8-14 days: large checked, 15+ days: large + extra"
+    
+  - factor: airline_allowance
+    guideline: "Match luggage to free allowance to avoid fees"
+    
+  - factor: destination_shopping
+    guideline: "Good shopping → pack light and buy. Limited shopping → pack everything"
+    
+  - factor: laundry_access
+    guideline: "Easy laundry → pack less. No laundry → pack full wardrobe"
+    
+  - factor: activity_type
+    guideline: "Active/outdoor → backpack/duffel. Business/formal → wheeled suitcase. Mixed → wheeled with backpack"
+    
+  - factor: physical_capability
+    guideline: "Weaker travelers → wheels essential. Strong hikers → backpack OK"
+    
+  - factor: budget
+    guideline: "Tight budget → use existing, avoid checked bag fees. Flexible → optimize for convenience"
+
+# NOTES ON USAGE:
+# - Dimensions are maximum external measurements
+# - Capacity is approximate, actual varies by design
+# - Empty weight affects how much you can pack within airline limits
+# - Linear dimensions (L+W+H) typically limited to 158cm (62in) for checked bags
+# - Prices are USD and approximate as of 2026, vary by retailer and sales
+# - Weight ratings: ultra_light (<1kg), light (1-2kg), medium (2-4kg), heavy (4-6kg), very_heavy (6kg+)
